@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+    background-color: whitesmoke;
+}
+
+.search_button{
+    height: 100px;
+    width: 100px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    
+}
+
+.adjetivos{
+    border-style: solid;
+    border-width: medium;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+ }
