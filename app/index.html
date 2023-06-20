@@ -18,52 +18,74 @@
     cursor: move;
   }
 </style>
-<div id = "main">
-<div class="centralizar" style="padding:100px; height: 100px;">
-  <img class="imagem-logo" src="assets/logo.png">
-</div>
-<div class="centralizar">
-  <div class="texto-bordar">
-    <div class="texto">
-      <b>Bem vindo ao Which Raccoon, ordene a lista abaixo com suas caracteristicas mais marcantes ate a menos marcante,
-        ao concluir clique em "Descobrir" para descobrir qual Guaxinim voce e.
-      </b>
+<div id="main">
+  <div class="centralizar" style="padding:100px; height: 100px;">
+    <img class="imagem-logo" src="assets/logo.png">
+  </div>
+  <div class="centralizar">
+    <div class="texto-bordar">
+      <div class="texto">
+        <b>
+          Bem-vindo ao "Which Raccoon"! Aqui, você poderá descobrir qual guaxinim você é com base em suas características marcantes. Abaixo está uma lista de características de guaxinins. Sua tarefa é ordená-las da mais marcante para a menos marcante, revelando assim qual guaxinim você mais se identifica. Divirta-se descobrindo o seu resultado!
+        </b>
+      </div>
     </div>
   </div>
+  <div class="centralizar" style=" padding-top: 20px;">
+    <table class="adjetivos">
+      <tbody id="sortableTable">
+        <tr class="sortableItem" draggable="true">
+          <td id="1">Travesso</td>
+        </tr>
+        <tr class="sortableItem" draggable="true">
+          <td id="2">Riso Frouxo</td>
+        </tr>
+        <tr class="sortableItem" draggable="true">
+          <td id="3">Perdido</td>
+        </tr>
+        <tr class="sortableItem" draggable="true">
+          <td id="4">Revolucionário</td>
+        </tr>
+        <tr class="sortableItem" draggable="true">
+          <td id="5">Fofoqueiro</td>
+        </tr>
+        <tr class="sortableItem" draggable="true">
+          <td id="6">Preguiçoso</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="centralizar" style="padding-top: 20px;">
+    <button onclick="teste()" class="search_button">DESCUBRA</button>
+  </div>
 </div>
-<div class="centralizar" style=" padding-top: 20px;">
-  <table class="adjetivos">
-    <tbody id="sortableTable">
-      <tr class="sortableItem" draggable="true">
-        <td id="1">Travesso</td>
-      </tr>
-      <tr class="sortableItem" draggable="true">
-        <td id="2">Riso Frouxo</td>
-      </tr>
-      <tr class="sortableItem" draggable="true">
-        <td id="3">Perdido</td>
-      </tr>
-      <tr class="sortableItem" draggable="true">
-        <td id="4">Revolucionário</td>
-      </tr>
-      <tr class="sortableItem" draggable="true">
-        <td id="5">Fofoqueiro</td>
-      </tr>
-      <tr class="sortableItem" draggable="true">
-        <td id="6">Preguiçoso</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="centralizar" style="padding-top:100px">
+  <div class="raccoon-info" id="resposta" style="display:none;flex-direction: row;">
+
+   
+    <img src="assets/ivan.png" class="raccoon-image" id="raccoon" style="display:none">
+    <div class="titulo">Parabens</div>
+    <div class="raccoon-text" id="raccoontxt" style="display: none;">Você se parece muito com o Comrade Ivan, uma figura lendária que personifica o espírito revolucionário. Dizem que ele foi batizado na vodka desde o seu nascimento, tornando-se um símbolo de coragem e determinação. Ivan está sempre em busca incansável da revolução, lutando por melhorias na vida não apenas para si mesmo, mas também para seus companheiros de luta. Sua devoção inabalável inspira outros a seguirem o mesmo caminho, unidos em prol de um futuro melhor. Ivan é uma encarnação viva do ideal revolucionário e continua a ser uma figura icônica, pronta para enfrentar todos os desafios com bravura e resiliência.</div>
+    <img
+    class="raccoon-image"
+      src="assets/princess.png"
+      id="raccoon1" style="display:none">
+      <div class="raccoon-text" id="raccoon1txt" style="display: none;">Você se parece muito com a Princessa, uma guaxinim como qualquer outra, que adora desfrutar dos seus fins de semana aconchegada em casa, mergulhando em maratonas de filmes e séries, enquanto saboreia suas comidas favoritas. Além disso, ela não nega a sua natureza de guaxinim e compartilhar suas opiniões sobre as pessoas ao seu redor,as vezes ate de forma maldosa.</div>
+    <img src="assets/Roy.png" class="raccoon-image" id="raccoon2" style="display: none;">
+    <div class="raccoon-text" id="raccoon2txt" style="display: none;">Conheçam Roy, um guaxinim adorável e travesso que se aventurou além das fronteiras de sua floresta e acabou se perdendo. Com sua natureza curiosa e brincalhona, Roy transforma cada momento em uma nova oportunidade de diversão e descoberta.</div>
+    <img src="assets/lilbigmc.png" class="raccoon-image" id="raccoon3" style="display: none;">
+    <div class="raccoon-text" id="raccoon3txt" style="display: none;">LiLBigMc é um guaxinim que espalha alegria por onde passa com seu riso peculiar. Seu riso frouxo é capaz de contagiar até mesmo os corações mais desanimados, transformando qualquer ambiente em um lugar repleto de risadas e diversão. Além de seu riso cativante, LiLBigMc tem um talento especial para fofocar. Ele adora estar a par dos últimos acontecimentos e não consegue resistir em compartilhar as notícias mais interessantes com seus amigos</div>
+   
+
+  </div>
 </div>
-<img src="https://cdn.discordapp.com/attachments/1098985849695256617/1120454997042266113/image.png" id="raccoon"
-  style="display:none">
-<img
-  src="https://cdn.discordapp.com/attachments/1098985849695256617/1120457524957692014/Captura_de_tela_de_2023-06-19_17-56-54.png"
-  id="raccoon1" style="display:none">
-<div class="centralizar" style="padding-top: 20px;">
-  <button onclick="teste()" class="search_button">DESCUBRA</button>
+
+<div class="centralizar">
+  <div class="centralizar" style="padding-top: 20px; display:none" id="voltar">
+    <button onclick="location.reload ()" class="search_button">VOLTAR</button>
+  </div>
 </div>
-</div>
+
 <script>
 
 
