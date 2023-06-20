@@ -18,16 +18,15 @@ A ideia deste projeto é trazer um algorítmo "Dividir e Conquistar" para um cen
 ![alt text](https://github.com/projeto-de-algoritmos/D-C_Teste_de_Personagem/blob/master/app/assets/readme3.png?raw=true)
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
+**Linguagem**: HTML, JavaScript e CSS<br>
 **Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+Para rodar é necessário apenas um browser para interpretar o HTML.
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+Com o mouse arraste e solte os adjetivos para criar um ordem nova e com a sua cara!
 
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
-
 
 
 
