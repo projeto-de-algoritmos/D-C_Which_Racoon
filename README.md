@@ -1,6 +1,6 @@
 # Qual guaxinim você é?
 
-**Número da Lista**: X<br>
+
 **Conteúdo da Disciplina**: Dividir e Conquistar<br>
 
 ## Alunos
