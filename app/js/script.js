@@ -6,7 +6,6 @@ const lilbigmc = ["2", "5", "1", "4", "3", "6"]
 var newOrder1 = ["1", "2", "3", "4", "5", "6"];
 var dragSrcElement = null;
 
-
 function handleDragStart(e) {
   dragSrcElement = this;
   e.dataTransfer.effectAllowed = 'move';
@@ -69,7 +68,6 @@ items.forEach(function(item) {
   item.addEventListener('drop', handleDrop, false);
   item.addEventListener('dragend', handleDragEnd, false);
 });
-
 
 function countInversions(array) {
 
@@ -136,15 +134,14 @@ function countInversions(array) {
 
 function consultar(){
 console.log('New order:', newOrder1);
-console.log(countInversions(newOrder1))
-console.log(Math.abs(countInversions(newOrder1)) )
-console.log(Math.abs(countInversions(lilbigmc) - countInversions(newOrder1)))
-console.log(Math.abs(countInversions(ivan) - countInversions(newOrder1)))
+
 
 let raccoon1 = Math.abs(countInversions(princess) - countInversions(newOrder1))
 let raccoon =Math.abs(countInversions(ivan) - countInversions(newOrder1))
 let raccoon2 = Math.abs(countInversions(roy) - countInversions(newOrder1))
 let raccoon3 = Math.abs(countInversions(lilbigmc) - countInversions(newOrder1))
+
+console.log(raccoon,raccoon1,raccoon2,raccoon3)
 
 const x = confereResposta(raccoon,raccoon1,raccoon2,raccoon3)
 
@@ -162,5 +159,8 @@ if(raccoon < raccoon1 && raccoon < raccoon2 && raccoon < raccoon3) return "racco
 else if(raccoon1 < raccoon && raccoon1 < raccoon2 && raccoon1 < raccoon3) return "raccoon1"
 else if(raccoon2 < raccoon1 && raccoon2 < raccoon && raccoon2 < raccoon3) return "raccoon2"
 else if(raccoon3 < raccoon1 && raccoon3 < raccoon && raccoon3 < raccoon2) return "raccoon3"
+else if(raccoon == raccoon1 || raccoon == raccoon2 || raccoon == raccoon3) return "raccoon"
+else if(raccoon1 == raccoon2 || raccoon1 == raccoon3) return "raccoon1"
+else if(raccoon2 == raccoon3) return "raccoon2"
 
 }
