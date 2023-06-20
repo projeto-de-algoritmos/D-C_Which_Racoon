@@ -60,3 +60,67 @@ items.forEach(function(item) {
   item.addEventListener('drop', handleDrop, false);
   item.addEventListener('dragend', handleDragEnd, false);
 });
+
+
+function countInversions(array) {
+
+  function mergeAndCountInversions(left, right) {
+    let mergedArray = [];
+    let count = 0;
+    let i = 0;
+    let j = 0;
+
+
+    while (i < left.length && j < right.length) {
+      if (left[i] <= right[j]) {
+        mergedArray.push(left[i]);
+        i++;
+      } else {
+        mergedArray.push(right[j]);
+        j++;
+        count += left.length - i;
+      }
+    }
+
+
+    while (i < left.length) {
+      mergedArray.push(left[i]);
+      i++;
+    }
+
+
+    while (j < right.length) {
+      mergedArray.push(right[j]);
+      j++;
+    }
+
+    return { mergedArray, count };
+  }
+
+  function mergeSortAndCount(array) {
+    if (array.length <= 1) {
+      return { sortedArray: array, count: 0 };
+    }
+
+    const mid = Math.floor(array.length / 2);
+    const left = array.slice(0, mid);
+    const right = array.slice(mid);
+
+    const { sortedArray: sortedLeft, count: leftCount } = mergeSortAndCount(
+      left
+    );
+    const { sortedArray: sortedRight, count: rightCount } = mergeSortAndCount(
+      right
+    );
+
+    const { mergedArray, count: splitCount } = mergeAndCountInversions(
+      sortedLeft,
+      sortedRight
+    );
+
+    return { sortedArray: mergedArray, count: leftCount + rightCount + splitCount };
+  }
+
+  const { count } = mergeSortAndCount(array);
+  return count;
+}
