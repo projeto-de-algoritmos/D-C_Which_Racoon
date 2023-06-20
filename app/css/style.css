@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Dekko';
+    
   
 }
 
@@ -14,10 +15,27 @@ body{
 }
 
 .search_button{
-    height: 100px;
-    width: 100px;
-    background-color: aliceblue;
-    border-radius: 20px;
+    height: 60px;
+    background-color: #63A2FF;
+    border: 0 solid #ffffff;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-weight: 1000;
+    justify-content: center;
+    line-height: 1.75rem;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    text-shadow: 0 0 3px black;
+    max-width: 460px;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    
     
 }
 .centralizar{
@@ -29,10 +47,76 @@ body{
 }
 .adjetivos{
     border-style: solid;
+    border-color: white;
     border-width: medium;
     width: 500px;
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: #63A2FF;
     font-size: 20px;
  }
+
+ .adjetivos td, .adjetivos th {
+    padding-left: 200px;
+    padding-right: 170px;
+    text-shadow: 0 0 1px black;
+    color: black;
+   
+
+  }
+  
+  .adjetivos tr:nth-child(even){background-color: #afcffe;}
+  
+  .adjetivos tr:hover {background-color: wheat;}
+
+  .imagem-logo{
+
+        height: 100px;
+
+  }
+
+
+
+.search_button:focus {
+  outline: 0;
+}
+
+.search_button:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.search_button:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .search_button {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+.texto-bordar{
+
+    background-color: #afcffe;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #63A2FF;
+    width: 800px;
+
+}
+  
+.texto{
+
+    font-size: 24px;
+    padding: 20px;
+
+}
