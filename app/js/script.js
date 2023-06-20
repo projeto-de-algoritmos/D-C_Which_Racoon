@@ -133,3 +133,34 @@ function countInversions(array) {
   const { count } = mergeSortAndCount(array);
   return count;
 }
+
+function consultar(){
+console.log('New order:', newOrder1);
+console.log(countInversions(newOrder1))
+console.log(Math.abs(countInversions(newOrder1)) )
+console.log(Math.abs(countInversions(lilbigmc) - countInversions(newOrder1)))
+console.log(Math.abs(countInversions(ivan) - countInversions(newOrder1)))
+
+let raccoon1 = Math.abs(countInversions(princess) - countInversions(newOrder1))
+let raccoon =Math.abs(countInversions(ivan) - countInversions(newOrder1))
+let raccoon2 = Math.abs(countInversions(roy) - countInversions(newOrder1))
+let raccoon3 = Math.abs(countInversions(lilbigmc) - countInversions(newOrder1))
+
+const x = confereResposta(raccoon,raccoon1,raccoon2,raccoon3)
+
+console.log(x);
+document.getElementById("main").style.display = 'none'
+document.getElementById("resposta").style.display = 'flex'
+document.getElementById(x).style.display = 'block'
+document.getElementById(x+"txt").style.display = 'block'
+document.getElementById("voltar").style.display = 'block'
+}
+
+function confereResposta(raccoon,raccoon1,raccoon2,raccoon3){
+
+if(raccoon < raccoon1 && raccoon < raccoon2 && raccoon < raccoon3) return "raccoon" 
+else if(raccoon1 < raccoon && raccoon1 < raccoon2 && raccoon1 < raccoon3) return "raccoon1"
+else if(raccoon2 < raccoon1 && raccoon2 < raccoon && raccoon2 < raccoon3) return "raccoon2"
+else if(raccoon3 < raccoon1 && raccoon3 < raccoon && raccoon3 < raccoon2) return "raccoon3"
+
+}
