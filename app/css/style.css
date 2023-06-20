@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Dekko');
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+
 
 * {
     margin: 0;
@@ -118,5 +120,45 @@ body{
 
     font-size: 24px;
     padding: 20px;
+
+}
+
+
+.raccoon-info{
+
+    height: 500px;
+    width: 1000px;
+    background-color: #63A2FF;
+    border-radius: 80px;
+    padding: 60px;
+    border-width: 10px;
+    border-color: white;
+    border-style: solid;
+
+
+
+}
+
+.raccoon-image{
+
+    width: 350px;
+    border-radius: 50%;
+    float: left;
+
+}
+
+.raccoon-text{
+
+    padding-top: 80px;
+    font-size: 18px;
+    padding-left: 40px;
+}
+
+.titulo{
+
+    font-size: 50px;
+    font-family: 'Gasoek One', sans-serif;
+    position: absolute;
+    padding-left: 20%;
 
 }
