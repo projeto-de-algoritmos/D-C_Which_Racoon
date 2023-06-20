@@ -1,3 +1,12 @@
+
+const ivan =  ["4", "6", "1", "5", "3", "4"];
+const princess = ["6", "5", "2", "3", "4", "1"];
+const roy = ["3", "1", "4", "5", "2", "6"];
+const lilbigmc = ["2", "5", "1", "4", "3", "6"]
+var newOrder1 = ["1", "2", "3", "4", "5", "6"];
+var dragSrcElement = null;
+
+
 function handleDragStart(e) {
   dragSrcElement = this;
   e.dataTransfer.effectAllowed = 'move';
