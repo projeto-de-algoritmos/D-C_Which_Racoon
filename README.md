@@ -10,10 +10,12 @@
 | 19/0094486  |  Pedro Henrique Nogueira Gonçalves |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+A ideia deste projeto é trazer um algorítmo "Dividir e Conquistar" para um cenário mais descontraído e divertido. Nossa inspiração para este projeto são alguns sites infanto-juvenis que possuem alguns "testes" ou "quiz" de personalidades, desenhos animados, entre outros. A ideia é fazer com que a pessoa responda um simples questionário e ao final apareça alguma personalidade ou personagem que as suas escolhas no teste resultaram. 
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![alt text](https://github.com/projeto-de-algoritmos/D-C_Teste_de_Personagem/blob/master/app/assets/readme1.png?raw=true)
+![alt text](https://github.com/projeto-de-algoritmos/D-C_Teste_de_Personagem/blob/master/app/assets/readme2.png?raw=true)
+![alt text](https://github.com/projeto-de-algoritmos/D-C_Teste_de_Personagem/blob/master/app/assets/readme3.png?raw=true)
 
 ## Instalação 
 **Linguagem**: xxxxxx<br>
