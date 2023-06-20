@@ -19,14 +19,12 @@ A ideia deste projeto é trazer um algorítmo "Dividir e Conquistar" para um cen
 
 ## Instalação 
 **Linguagem**: HTML, JavaScript e CSS<br>
-**Framework**: (caso exista)<br>
+**Framework**: Nenhum necessário<br>
 Para rodar é necessário apenas um browser para interpretar o HTML.
 
 ## Uso 
-Com o mouse arraste e solte os adjetivos para criar um ordem nova e com a sua cara!
+Com o mouse arraste e solte os adjetivos para criar um ordem nova e do seu jeito!
 
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
-
-
 
