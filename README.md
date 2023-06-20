@@ -25,4 +25,6 @@ Para rodar é necessário apenas um browser para interpretar o HTML.
 ## Uso 
 Com o mouse arraste e solte os adjetivos para criar um ordem nova e do seu jeito!
 
+## Outros
 
+Vídeo de apresentação: https://drive.google.com/file/d/1p4KEPPA9IPPCnp8-kppbWK1sm069aVbs/view
