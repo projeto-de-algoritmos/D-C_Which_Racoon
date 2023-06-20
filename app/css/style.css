@@ -159,6 +159,7 @@ body{
     font-size: 50px;
     font-family: 'Gasoek One', sans-serif;
     position: absolute;
-    padding-left: 20%;
-
+    padding-left: 25%;
+    color: #f9f05a;
+    text-shadow: 0 0 2px black;
 }
